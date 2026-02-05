@@ -407,9 +407,9 @@ print("="*70)
 cm = confusion_matrix(true_classes, pred_classes)
 print("\nConfusion Matrix:")
 print("              Predicted")
-print("Actual   0     1     2     3")
+print("Actual   0     1     2 ")
 for i, row in enumerate(cm):
-    print(f"  {i}    {row[0]:>6,} {row[1]:>5,} {row[2]:>5,} {row[3]:>5,}")
+    print(f"  {i}    {row[0]:>6,} {row[1]:>5,} {row[2]:>5,} ")
 
 print("\nClassification Report:")
 print(classification_report(
@@ -445,4 +445,5 @@ print(f"\nKey Results:")
 print(f"  Balanced Accuracy: {balanced_acc:.4f}")
 print(f"  MAE: {mae:.4f}")
 print(f"  R²: {r2:.4f}")
+
 print("="*70)
