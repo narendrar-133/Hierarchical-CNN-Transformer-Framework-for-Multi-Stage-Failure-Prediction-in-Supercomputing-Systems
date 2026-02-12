@@ -9,16 +9,16 @@ ax.set_xlim(0, 10)
 ax.set_ylim(0, 16)
 ax.axis('off')
 
-# Define colors - Professional grayscale palette for conference papers (all same shade)
-input_color = '#E8E8E8'
-cnn_color = '#E8E8E8'
-embedding_color = '#E8E8E8'
-transformer_color = '#FAFAFA'
-attention_color = '#E8E8E8'
-ffn_color = '#E8E8E8'
-pooling_color = '#E8E8E8'
-fc_color = '#E8E8E8'
-output_color = '#E8E8E8'
+# Define colors - All white for IEEE conference paper standards
+input_color = 'white'
+cnn_color = 'white'
+embedding_color = 'white'
+transformer_color = 'white'
+attention_color = 'white'
+ffn_color = 'white'
+pooling_color = 'white'
+fc_color = 'white'
+output_color = 'white'
 
 # Helper function to create boxes
 def create_box(ax, x, y, width, height, text, subtext=None, color='white', edge_color='black'):
@@ -117,4 +117,5 @@ fig.patch.set_facecolor('white')
 plt.tight_layout()
 plt.savefig('architecture.png', dpi=300, bbox_inches='tight', 
             facecolor='white', edgecolor='none')
+
 print("Architecture diagram saved as architecture.png")
